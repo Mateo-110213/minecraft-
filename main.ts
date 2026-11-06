@@ -193,10 +193,6 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
             `)
     }
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, location) {
-    info.changeLifeBy(-1)
-    mySprite.setPosition(22, 275)
-})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Speer_bereit == 1) {
         projectile = sprites.createProjectileFromSprite(img`
